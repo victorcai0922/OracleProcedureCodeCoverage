@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Jul 10 14:34:06 CST 2014
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=false
+onejar.checkbox=false
+jarname=D\:\\caiql\\spcov.jar
+manifest.mergeall=false
+manifest.mainclass=com.cmd.Spcov
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=<po|ProcedureCodecoverage>~createtab.sql;<po|ProcedureCodecoverage>~database.properties;<po|ProcedureCodecoverage>~log4j.properties;<po|ProcedureCodecoverage>~profiler.sql;<po|ProcedureCodecoverage>~profload.sql
+includes=
