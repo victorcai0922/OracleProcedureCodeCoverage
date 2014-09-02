@@ -1,0 +1,3637 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <h1>ULOG.PLOG - code coverage report</h1>
+  <link href="./css/coverage.css" media="all" rel="stylesheet" type="text/css">
+  <link href="./css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+  <link href="./css/bootstrap-theme.min.css" media="all" rel="stylesheet" type="text/css">
+  <link href="./css/bootstrap-theme.css" media="all" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <table class="table table-bordered">
+  <thead>
+        <tr class="active">
+          <th><p class="text-left">Line Number</p></th>
+          <th><p class="text-center">Code Text</p></th>
+          <th><p class="text-right">Avg Time (sec)</p></th>
+        </tr>
+  </thead>
+  <tbody>
+      	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>1</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>LOG4PLSQL_VERSION  VARCHAR2(200) := '3.1.3.1';
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>53.413469</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>2</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getNextID
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.167438</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>3</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>     return temp;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.072378</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>4</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    myName      varchar2(2000) := '.PLOG';
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.111711</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>5</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    While ptFinLigne > 0 and ptDebLigne > 83 loop
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>1.172992</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>6</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>       cpt          := cpt + 1;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.774398</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>7</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>       ptDebCode    := INSTR (Line, endOfField, -1, 1);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>1.845369</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>8</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>       IF instr(UserCode,myName) = 0 then
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>1.700766</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>9</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>           IF cpt > 3 then
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.217787</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>10</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>             resultat := resultat||'.';
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.181457</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>11</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>return resultat;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.174745</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>12</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    lSECTION := calleurname;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.137196</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>13</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    newCTX := init (pSECTION => lSECTION);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>30.786122</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>14</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    RETURN newCTX;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.492001</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>15</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END getDefaultContext;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.361798</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>16</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.045327</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>17</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>procedure addRowAutonomous
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.148201</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>18</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>begin
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>3.733894</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>19</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt> addRow
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.075152</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>20</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>  commit;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>56.286206</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>21</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>      PLOG.ERROR;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>22</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>      rollback;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>23</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>      raise;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>24</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>3.415905</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>25</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    IF pCTX.isDefaultInit = FALSE THEN
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.142878</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>26</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        plog.error('please is necessary to use plog.init for yours contexte.');
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>27</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    IF PLTEXTE is null and sqlcode <> 0 then
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.094946</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>28</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        LLTEXTE := 'SQLCODE:'||SQLCODE ||' SQLERRM:'||SQLERRM;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>29</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>            LLTEXTE := pLTEXTE;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.070938</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>30</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>            WHEN VALUE_ERROR THEN
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>31</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>                ASSERT (pCTX, length(pLTEXTE) <= 2000, 'Log Message id:'||pID||' too long. ');
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>32</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>            WHEN OTHERS THEN
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>33</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        END;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.052814</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>34</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        IF pCTX.USE_OUT_TRANS = FALSE then
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.046565</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>35</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>                 addRow
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>36</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        DBMS_PIPE.pack_message(pLLEVEL);                -- LOG LEVEL
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>37</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        DBMS_PIPE.pack_message('SAVE_IN_LOG');          -- MESSAGE TYPE?
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>38</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        sys.dbms_system.ksdwrt(2,substr(LLTEXTE,0,1000));
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>39</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>	        wrap        number := pCTX.DBMS_OUTPUT_WRAP;   --length to wrap long text.
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>40</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>			hdr_len := length(hdr);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>41</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>			line_len := wrap - hdr_len;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>42</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>	        pt := 1;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>43</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end log;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.286499</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>44</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    pCTX       	LOG_CTX;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.05944</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>45</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    pCTX.LLEVEL          := pLEVEL;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.050294</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>46</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    		null ;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.303345</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>47</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return pCTX;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>1.887972</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>48</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE setBeginSection
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>49</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    checkAndInitCTX(pCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>50</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getSection;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.071863</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>51</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getSection;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>52</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE setEndSection
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>53</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    if pSECTION = 'EndAllSection' THEN
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>54</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    pCTX.LSection := substr(pCTX.LSection,1,instr(UPPER(pCTX.LSection), UPPER(pSECTION), -1)-2);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>55</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return pCTX.USE_OUT_TRANS;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>56</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getTransactionMode;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>57</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getTransactionMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>58</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        generiqueCTX PLOG.LOG_CTX := PLOG.getDefaultContext;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>59</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return getTransactionMode(pCTX => generiqueCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>60</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getTransactionMode;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>61</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end setUSE_LOG4JMode;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>62</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getUSE_LOG4JMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>63</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return pCTX.USE_LOG4J;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>64</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getUSE_LOG4JMode;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>65</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getUSE_LOG4JMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>66</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getUSE_LOG4JMode;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>67</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE setLOG_TABLEMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>68</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    checkAndInitCTX(pCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>69</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    pCTX.USE_LOGTABLE := inLOG_TABLE;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>70</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end setLOG_TABLEMode;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>71</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getLOG_TABLEMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>72</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getLOG_TABLEMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>73</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        generiqueCTX PLOG.LOG_CTX := PLOG.getDefaultContext;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>74</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return getTransactionMode(pCTX => generiqueCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>75</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getLOG_TABLEMode;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>76</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE setLOG_ALERTMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>77</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    checkAndInitCTX(pCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>78</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    pCTX.USE_ALERT := inLOG_ALERT;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>79</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getLOG_ALERTMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>80</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return pCTX.USE_ALERT;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>81</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getLOG_ALERTMode;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>82</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getLOG_ALERTMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>83</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE setLOG_TRACEMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>84</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    pCTX.USE_TRACE := inLOG_TRACE;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>85</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    checkAndInitCTX(pCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>86</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return pCTX.USE_DBMS_OUTPUT;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>87</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getDBMS_OUTPUTMode;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>88</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getDBMS_OUTPUTMode
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>89</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        generiqueCTX PLOG.LOG_CTX := PLOG.getDefaultContext;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>90</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return getTransactionMode(pCTX => generiqueCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>91</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getDBMS_OUTPUTMode;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>92</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE setLevel
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>93</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    checkAndInitCTX(pCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>94</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    IF pLEVEL = NOLEVEL then
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>95</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    IF nbrl > 0 then
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>96</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        raise_application_error(-20501, 'SetLevel ('||pLEVEL||') not in TLOGLEVEL table');
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>97</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    WHEN OTHERS THEN
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>98</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        PLOG.ERROR;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>99</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end setLevel;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>100</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getLevel
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>5.52567</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>101</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return pCTX.LLEVEL;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.071516</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>102</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return getLevel( pCTX => generiqueCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>103</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getLevel;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>104</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION islevelEnabled
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>105</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    if getLevel(pCTX) <= pLEVEL then
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>106</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        return TRUE;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>107</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        return FALSE;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>108</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION islevelEnabled
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>109</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION isFatalEnabled RETURN boolean is begin return islevelEnabled(getTextInLevel('FATAL')); end;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>110</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION isErrorEnabled RETURN boolean is begin return islevelEnabled(getTextInLevel('ERROR')); end;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>111</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION isWarnEnabled  RETURN boolean is begin return islevelEnabled(getTextInLevel('WARN')) ; end;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>112</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION isInfoEnabled  RETURN boolean is begin return islevelEnabled(getTextInLevel('INFO')) ; end;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>113</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION isFatalEnabled ( pCTX IN LOG_CTX ) RETURN boolean is begin return islevelEnabled(pCTX, getTextInLevel('FATAL')); end;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>114</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION isWarnEnabled  ( pCTX IN LOG_CTX ) RETURN boolean is begin return islevelEnabled(pCTX, getTextInLevel('WARN')) ; end;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>115</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION isInfoEnabled  ( pCTX IN LOG_CTX ) RETURN boolean is begin return islevelEnabled(pCTX, getTextInLevel('INFO')) ; end;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>116</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    purge(tempLogCtx);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>117</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end purge;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>118</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE purge
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>119</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    execute immediate ('truncate table tlog');
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>120</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    purge(pCTX, sysdate+1);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>121</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE purge
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>122</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE log
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>123</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>     lLSECTION  TLOG.LSECTION%type  := getSection(pCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>124</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        RETURN;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>125</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE log
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>126</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end log;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>127</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE log
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>128</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>   generiqueCTX PLOG.LOG_CTX := PLOG.getDefaultContext;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>129</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    LOG(pLEVEL => pLEVEL, pCTX => generiqueCTX, pTEXTE => pTEXTE);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>130</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end log;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>131</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    LOG(pLEVEL => getTextInLevel(pLEVEL), pTEXTE => pTEXTE);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>132</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end log;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>133</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>procedure pl
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>134</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>  	dbms_output.put_line(o_errmsg);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>135</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>136</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>	lLSECTION  TLOG.LSECTION%type  := getSection(pCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.260244</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>137</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    checkAndInitCTX(pCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.073242</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>138</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    IF pLEVEL < getLevel(pCTX) THEN
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.151611</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>139</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        RETURN;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>140</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    lId := getNextID(pCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.151071</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>141</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    log (   pCTX        =>pCTX,
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>45.463338</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>142</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end log;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.655734</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>143</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE debug
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>144</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    LOG(pLEVEL => getTextInLevel('DEBUG'), pCTX => pCTX, pTEXTE => pTEXTE);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>145</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end debug;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>146</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE debug
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>147</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    LOG(pLEVEL => getTextInLevel('DEBUG'), pTEXTE => pTEXTE);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>148</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE debug
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.520974</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>149</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END info;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>150</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE warn
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>151</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END warn;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>152</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE error
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>153</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END error;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>154</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE fatal
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>155</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>	o_errcode := 999999 ;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>156</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>	o_errmsg  := SQLCODE ||': '||  SQLERRM||chr(10);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>157</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>	o_errmsg  := o_errmsg || 'ERROR_BACKTRACE:' ||chr(10)|| DBMS_UTILITY.FORMAT_ERROR_BACKTRACE;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>158</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>	log(
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>159</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END fatal;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>160</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE info
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>161</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    LOG(pLEVEL => getTextInLevel('WARN'), pCTX => pCTX,  pTEXTE => pTEXTE);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>162</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE error
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>163</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    LOG(pLEVEL => getTextInLevel('ERROR'), pCTX => pCTX,  pTEXTE => pTEXTE);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>164</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end error;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>165</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end error;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>166</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE fatal
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>167</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE fatal
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>168</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE assert (
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>169</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>  IF not islevelEnabled(pCTX, PLOGPARAM.DEFAULT_ASSET_LEVEL) then
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>170</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        RETURN;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>171</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>  IF NOT pCONDITION THEN
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>172</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>     LOG (pLEVEL => PLOGPARAM.DEFAULT_ASSET_LEVEL, pCTX => pCTX,  pTEXTE => 'AAS'||pLogErrorCodeIfFALSE||': '||pLogErrorMessageIfFALSE);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>173</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>     IF pRaiseExceptionIfFALSE THEN
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>174</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        raise_application_error(pLogErrorCodeIfFALSE, pLogErrorMessageIfFALSE, pLogErrorReplaceError);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>175</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END assert;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>176</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE assert (
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>177</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>   generiqueCTX PLOG.LOG_CTX := PLOG.getDefaultContext;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>178</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE full_call_stack
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>179</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>   generiqueCTX PLOG.LOG_CTX := PLOG.getDefaultContext;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>180</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    full_call_stack (Pctx => generiqueCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>181</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END full_call_stack;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>182</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE full_call_stack (
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>183</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>     checkAndInitCTX(pCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>184</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getLOG4PLSQVersion return varchar2
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>185</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getLOG4PLSQVersion;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>186</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getLevelInText (
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>187</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    RETURN ret;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>188</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    WHEN OTHERS THEN
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>189</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>        return 'UNDEFINED';
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>190</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END getLevelInText;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>191</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getTextInLevel (
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>192</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return pCTX.DBMS_PIPE_NAME;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>193</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END getDBMS_PIPE_NAME;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>194</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>FUNCTION getDBMS_PIPE_NAME
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>195</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    generiqueCTX PLOG.LOG_CTX := PLOG.getDefaultContext;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>196</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    return getDBMS_PIPE_NAME( pCTX => generiqueCTX);
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>197</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>end getDBMS_PIPE_NAME;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>198</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>PROCEDURE setDBMS_PIPE_NAME
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="uncovered" >
+        <td>
+             <p class="text-left">
+		     <tt>199</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>    pCTX.DBMS_PIPE_NAME := inDBMS_PIPE_NAME;
+</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0</tt>
+		     </p>
+		</td>
+      </tr>
+       	      <tr class="marked" >
+        <td>
+             <p class="text-left">
+		     <tt>200</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-left">
+		     <tt>END PLOG;</tt>
+		     </p>
+		</td>
+		<td>
+		     <p class="text-right">
+		     <tt>0.078559</tt>
+		     </p>
+		</td>
+      </tr>
+      </tbody>
+  </table>
+  
+  <table class="table table-bordered" width="100%" cellspacing="0">
+      <tr class="success">
+        <td>
+          <a href="report.html"><h6>[all packages]</h6></a>
+        </td>
+      </tr>
+      <tr class="success">
+        <td>
+          <a href="#"><h6>plsql code coverage tools. <small>version 1.0, by Cffex Test group</small></h6></a>
+        </td>
+      </tr>
+    </table>
+  
+</body>
+</html>
