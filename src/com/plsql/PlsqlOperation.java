@@ -420,7 +420,7 @@ public class PlsqlOperation {
 				//源代码中剔除空行
 				String text = rs.getString("TEXT");
 				String line = rs.getString("LINE");
-				if (text!=null && !text.equals("")&& text.trim() != null){
+				if (text!=null&& text.trim() != null && !text.equals("")){
 					sourceCode.put(line, text.trim());
 				}
 			}

@@ -19,9 +19,9 @@
         </tr>
   </thead>
   <tbody>
-  #foreach ($text in $coverage.keySet())
+  #foreach ($line in $coverage.keySet())
     #set($index=$velocityCount - 1)
-    #set($cov=$coverage.get($text))
+    #set($cov=$coverage.get($line))
     #if ($cov == "C")
 	 #set($classname = "marked")
 	#elseif($cov == "0")
@@ -37,17 +37,17 @@
 		</td>
 		<td>
 		     <p class="text-left">
-		     <tt>$text</tt>
+		     <tt>$sourceCode.get($line)</tt>
 		     </p>
 		</td>
 		<td>
 		     <p class="text-left">
-		     <tt>$lineTotalOccur.get($text)</tt>
+		     <tt>$lineTotalOccur.get($line)</tt>
 		     </p>
 		</td>
 		<td>
 		     <p class="text-right">
-		     <tt>$lineTime.get($text)</tt>
+		     <tt>$lineTime.get($line)</tt>
 		     </p>
 		</td>
       </tr>

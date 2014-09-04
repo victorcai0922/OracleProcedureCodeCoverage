@@ -102,9 +102,9 @@ public class Spcov {
 	
 	public static void main(String[] args) {
 		Spcov spcov = new Spcov();
-		args = new String[2];
-		args[0] = new String("java -jar spcov.jar");
-		args[1] = new String("-report");
+//		args = new String[2];
+//		args[0] = new String("java -jar spcov.jar");
+//		args[1] = new String("-report");
 //		System.out.println(args);
 		spcov.allCommand(args);
 	}

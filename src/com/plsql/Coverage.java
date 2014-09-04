@@ -5,6 +5,7 @@ package com.plsql;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -15,8 +16,6 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
-import com.bean.SourceCodeBean;
-import com.bean.StaticsBean;
 import com.report.CodeCoverageReportGenerator;
 
 /**
@@ -33,6 +32,8 @@ public class Coverage {
 	public Map<String, String> pkuncoverage = new Hashtable<String, String>();
 
 	private Map<String, Map<String, String>> pkDetailCoverageInfo;
+	
+	private Map<String,String> unitCoveredLineSum;
 
 	private Map<String, Map<String, String>> pkDetailTimeInfo;
 
@@ -55,7 +56,7 @@ public class Coverage {
 	private Map<String, Map<String, String>> sourceCodeMap;
 
 	private int totalLine;
-	
+
 	private int coveredLine;
 
 	public int getCoveredLine() {
@@ -107,8 +108,8 @@ public class Coverage {
 			logger.error("" + e.getMessage());
 		}
 	}
-	
-	public void statrtProfiler(){
+
+	public void statrtProfiler() {
 		initialize();
 	}
 
@@ -150,8 +151,9 @@ public class Coverage {
 			// pktotalline,
 			// pkcoverage, pkuncoverage, pkanalyzedline);
 			reporter.report(plsqlOperation.schema, sourceCodeMap, totalLine,
-					analyzedLine, coveredLine,pkcoverage, pkuncoverage,
-					pkDetailCoverageInfo, pkDetailTimeInfo,pkDetailLineOccurInfo);
+					analyzedLine, coveredLine, pkcoverage, pkuncoverage,
+					pkDetailCoverageInfo, pkDetailTimeInfo,
+					pkDetailLineOccurInfo,unitCoveredLineSum);
 			System.out.println("report generate finishing");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -184,6 +186,7 @@ public class Coverage {
 
 	/**
 	 */
+	@Deprecated
 	private void createStaticFiles() {
 		plsqlOperation.execute();
 		plsqlOperation.createPackageSrcMapping();
@@ -232,13 +235,14 @@ public class Coverage {
 	 * 詳細數據匹配
 	 */
 	public void detailsDataMap() {
-		Map<String, Map<String,String>> staticsMap = plsqlOperation
+		Map<String, Map<String, String>> staticsMap = plsqlOperation
 				.getStaticsData();
 		Iterator<String> unitKeys = staticsMap.keySet().iterator();
 		sourceCodeMap = new LinkedHashMap<String, Map<String, String>>();
 		pkDetailCoverageInfo = new LinkedHashMap<String, Map<String, String>>();
 		pkDetailTimeInfo = new LinkedHashMap<String, Map<String, String>>();
-		pkDetailLineOccurInfo = new LinkedHashMap<String, Map<String,String>>();
+		pkDetailLineOccurInfo = new LinkedHashMap<String, Map<String, String>>();
+		unitCoveredLineSum = new LinkedHashMap<String, String>();
 		indexDetail = new LinkedHashMap<String, String>();
 		int totalLineSum = 0;
 		int analyzedLineSum = 0;
@@ -247,63 +251,70 @@ public class Coverage {
 		while (unitKeys.hasNext()) {
 			String unit = unitKeys.next();
 			String[] str = unit.split("\\.");
-			Map<String,String> unitMapCode = staticsMap.get(unit);
-			Map<String,String> unitLineOccur = plsqlOperation.getLineTotalOccur().get(unit);
+			Map<String, String> unitMapCode = staticsMap.get(unit);
+			Map<String, String> unitLineOccur = plsqlOperation
+					.getLineTotalOccur().get(unit);
 			Map<String, String> coverage = new LinkedHashMap<String, String>();
 			Map<String, String> lineTime = new LinkedHashMap<String, String>();
 			Map<String, String> lineOccur = new LinkedHashMap<String, String>();
 			String owner = str[0];
 			String name = str[1];
 			// depend on the unit name,get the source code from all_source table
-			Map<String, String> sourceCode4unit = plsqlOperation.getSourceCode(owner, name);
+			Map<String, String> sourceCode4unit = plsqlOperation.getSourceCode(
+					owner, name);
 			totalLineSum += sourceCode4unit.size();
 			analyzedLineSum += unitMapCode.size();
 			// get the details static from every unit
 			Iterator<String> keys = sourceCode4unit.keySet().iterator();
-			while(keys.hasNext()){
+			int coveredLine4unit = 0;
+			while (keys.hasNext()) {
 				String line = keys.next();
 				String text = sourceCode4unit.get(line);
 				String occur = unitLineOccur.get(line);
-				if(occur == null){
+				if (occur == null) {
 					occur = "0";
 				}
 				String covered = "0";
-				//判断代码是否被覆盖到，若被覆盖到，判断代码是否为注释行，若为注释行则忽略此代码行
-				if (text.startsWith("--")){
-					covered = "I";
-				}
-				if(unitMapCode.containsKey(line)){
-					covered = "C";
+				// 判断代码是否被覆盖到，若被覆盖到，判断代码是否为注释行，若为注释行则忽略此代码行
+				if (unitMapCode.containsKey(line)) {
+					if (text.startsWith("--")) {
+						covered = "I";
+					} else {
+						covered = "C";
+						coveredLine4unit++;
 					}
-				//存储覆盖率信息
-				coverage.put(text, covered);
+				}else{
+					if (text.startsWith("--")) {
+						covered = "I";
+					}
+				}
+				// 存储覆盖率信息
+				coverage.put(line, covered);
 				String time = unitMapCode.get(line);
-				if(time==null){
+				if (time == null) {
 					time = "0";
 				}
-				lineTime.put(text, time);
-				lineOccur.put(text, occur);
+				lineTime.put(line, time);
+				lineOccur.put(line, occur);
 			}
-
-				/***
-				 * calculate the coverage rate of every package
-				 */
-			    coveredLineSum  += coverage.size();
-				double c = coverage.size();
-				double cov = 0;
-				double uncov = 0;
-				cov = c / sourceCode4unit.size() * 100;
-				uncov = 100 - cov;
-				pkcoverage.put(unit, String.format("%.2f", cov));
-				pkuncoverage.put(unit, String.format("%.2f", uncov));
-				/***
-				 * the detail coveragre source code line
-				 */
-				pkDetailCoverageInfo.put(unit, coverage);
-				pkDetailTimeInfo.put(unit, lineTime);
-				pkDetailLineOccurInfo.put(unit, lineOccur);
-			
-
+			/***
+			 * calculate the coverage rate of every package
+			 */
+			coveredLineSum = coveredLineSum + coveredLine4unit;
+			double c = coveredLine4unit;
+			double cov = 0;
+			double uncov = 0;
+			cov = c / coverage.size() * 100;
+			uncov = 100 - cov;
+			pkcoverage.put(unit, String.format("%.2f", cov));
+			pkuncoverage.put(unit, String.format("%.2f", uncov));
+			unitCoveredLineSum.put(unit, String.valueOf(coveredLine4unit));
+			/***
+			 * the detail coveragre source code line
+			 */
+			pkDetailCoverageInfo.put(unit, coverage);
+			pkDetailTimeInfo.put(unit, lineTime);
+			pkDetailLineOccurInfo.put(unit, lineOccur);
 			sourceCodeMap.put(unit, sourceCode4unit);
 		}
 		// indexDetail.put("Package Sum", arg1)

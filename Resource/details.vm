@@ -72,7 +72,7 @@
 		     <tt><p class="text-center">$sumPackage.get($key).size()</p></tt>
 		    </td>
 		    <td>
-		     <tt><p class="text-center">$code_coverage_info.get($key).size()</p></tt>
+		     <tt><p class="text-center">$coverageLineNum.get($key)</p></tt>
 		    </td>
             <td>
             #set($arival = $code_coverage.get($key))

@@ -148,7 +148,7 @@ public class CodeCoverageReportGenerator extends Velocity {
 	public void report(String schema,
 			Map<String, Map<String, String>> sourceCodeMap,
 			int totalLine, int analyzedLine, int coveredLine, Map<String, String> pkcoverage,
-			Map<String, String> pkuncoverage,Map<String, Map<String, String>> pkDetailCoverageInfo,Map<String, Map<String, String>> pkDetailTimeInfo,Map<String, Map<String, String>> pkDetailOccurInfo) {
+			Map<String, String> pkuncoverage,Map<String, Map<String, String>> pkDetailCoverageInfo,Map<String, Map<String, String>> pkDetailTimeInfo,Map<String, Map<String, String>> pkDetailOccurInfo, Map<String,String> coveredlinenum4unit) {
 		try{
 		Properties p = new Properties();
 		p.setProperty("resource.loader", "class");
@@ -163,7 +163,7 @@ public class CodeCoverageReportGenerator extends Velocity {
 		VelocityContext context = new VelocityContext();
 		VelocityContext pakcontext = new VelocityContext();
 
-		float c = analyzedLine;
+		float c = coveredLine;
 		float cov = 0;
 		float uncov = 0;
 		cov = c / totalLine * 100;
@@ -178,6 +178,7 @@ public class CodeCoverageReportGenerator extends Velocity {
 		context.put("code_coverage", pkcoverage);
 		context.put("un_code_coverage", pkuncoverage);
 		context.put("code_coverage_info", pkDetailCoverageInfo);
+		context.put("coverageLineNum", coveredlinenum4unit);
 		FileOutputStream fos = new FileOutputStream("report/report.html");
 		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fos,
 				"utf-8"));
